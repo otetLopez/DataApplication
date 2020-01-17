@@ -13,6 +13,9 @@
 		F59787B023D116CC003A4D7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59787AE23D116CC003A4D7D /* Main.storyboard */; };
 		F59787B223D116CE003A4D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59787B123D116CE003A4D7D /* Assets.xcassets */; };
 		F59787B523D116CE003A4D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59787B323D116CE003A4D7D /* LaunchScreen.storyboard */; };
+		F59787BE23D11C1E003A4D7D /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59787BD23D11C1E003A4D7D /* Book.swift */; };
+		F59787C223D121F4003A4D7D /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59787C123D121F4003A4D7D /* BookTableViewController.swift */; };
+		F59787C523D12F61003A4D7D /* BookModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F59787C323D12F61003A4D7D /* BookModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F59787B123D116CE003A4D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F59787B423D116CE003A4D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F59787B623D116CE003A4D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F59787BD23D11C1E003A4D7D /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		F59787C123D121F4003A4D7D /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
+		F59787C423D12F61003A4D7D /* BookModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		F59787A723D116CC003A4D7D /* DataApplication */ = {
 			isa = PBXGroup;
 			children = (
+				F59787BC23D11C0D003A4D7D /* Model */,
 				F59787A823D116CC003A4D7D /* AppDelegate.swift */,
 				F59787AA23D116CC003A4D7D /* SceneDelegate.swift */,
 				F59787AC23D116CC003A4D7D /* ViewController.swift */,
@@ -65,6 +72,16 @@
 				F59787B623D116CE003A4D7D /* Info.plist */,
 			);
 			path = DataApplication;
+			sourceTree = "<group>";
+		};
+		F59787BC23D11C0D003A4D7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F59787BD23D11C1E003A4D7D /* Book.swift */,
+				F59787C123D121F4003A4D7D /* BookTableViewController.swift */,
+				F59787C323D12F61003A4D7D /* BookModel.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59787C223D121F4003A4D7D /* BookTableViewController.swift in Sources */,
+				F59787BE23D11C1E003A4D7D /* Book.swift in Sources */,
 				F59787AD23D116CC003A4D7D /* ViewController.swift in Sources */,
 				F59787A923D116CC003A4D7D /* AppDelegate.swift in Sources */,
+				F59787C523D12F61003A4D7D /* BookModel.xcdatamodeld in Sources */,
 				F59787AB23D116CC003A4D7D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +358,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F59787C323D12F61003A4D7D /* BookModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F59787C423D12F61003A4D7D /* BookModel.xcdatamodel */,
+			);
+			currentVersion = F59787C423D12F61003A4D7D /* BookModel.xcdatamodel */;
+			path = BookModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F597879D23D116CC003A4D7D /* Project object */;
 }
